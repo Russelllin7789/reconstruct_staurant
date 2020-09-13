@@ -1,0 +1,16 @@
+<div class="banner"></div>
+
+<form action="/restaurants/{{ restaurant._id }}?_method=PUT" method="POST">
+  <input type="text" placeholder="輸入餐廳名稱" name="name" value=" {{ restaurant.name }}">
+  <input type="text" placeholder="輸入餐廳英文名稱" name="name_en" value="{{ restaurant.name_en }}">
+  <input type="text" placeholder="輸入餐廳類別" name="category" value=" {{ restaurant.category }}">
+  <input type="text" placeholder="上傳餐廳圖片" name="image" value=" {{ restaurant.image}} ">
+  <input type="text" placeholder="輸入餐廳地點" name="location" value="{{ restaurant.location}} ">
+  <input type="text" placeholder="輸入餐廳電話" name="phone" value="{{ restaurant.phone }}">
+  <input type="text" placeholder="輸入餐廳Google map" name="google_map" value="{{ restaurant.google_map }}">
+  <input type="text" placeholder="輸入餐廳評等" name="rating" value="{{ restaurant.rating }}">
+  <input type="text" placeholder="輸入餐廳描述" name="description" value="{{ restaurant.description }}">
+
+  <button type="submit">Save</button>
+  <a href="/">Back</a>
+</form>
